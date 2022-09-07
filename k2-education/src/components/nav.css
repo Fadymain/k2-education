@@ -6,6 +6,12 @@
     align-items: stretch;
     gap: 2rem;
     padding: 1rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    /* left: 0; */
+    width: 98%;
 }
 
 .site-title {
@@ -31,7 +37,7 @@
     padding: .25rem;
 }
 
-.nav li:before,
+/* .nav li:before,
 .nav li:after {
     content: "";
     position: absolute;
@@ -58,11 +64,11 @@
 .nav li:after,
 .nav li:before {
     width: 100%;
-}
-/* .nav li:active {
+} */
+.nav li:active {
     background-color: silver;
 }
 
 .nav li:hover {
     background-color: silver;
-} */
+}
