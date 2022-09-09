@@ -1,13 +1,9 @@
 .body_image {
     width: 100%;
-    /* height: 100%; */
-    /* width: 980px;
-    height: 779px;
-    object-fit: cover;
-    object-position: 50% 50%; */
+    height: 900px;
 }
 
 .body_image_pic {
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
