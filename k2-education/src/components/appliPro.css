@@ -1,5 +1,30 @@
 .appli_pro {
-    background-color: #34568b;
-    width: 100%;
+    /* background-color: #34568b; */
+    background-color: cornsilk;
+    width: 96.7%;
     height: 600px;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* .appli_slide {
+    background-color: gray;
+    padding: 6rem;
+    overflow: hidden;
+} */
+
+/* .appli_text {
+    width: 100%;
+    display: flex;
+    margin: 1rem 1rem 0;
+    justify-content: center;
+}  */
+
+.swiper {
+    width: 100%;
+} 
+
+.swiper-wrapper {
+    background-color: gray;
+    padding: 6rem;
 }
