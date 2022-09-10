@@ -1,6 +1,12 @@
 import React from 'react';
 import './appliPro.css';
+import {Pagination, Navigation, Mousewheel, Keyboard} from 'swiper';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const data = [
   {
@@ -23,6 +29,36 @@ const AppliPro = () => {
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br></br>
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
         </p>
+
+        <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className='mySwiper'
+        // modules={[Pagination, Navigation, Scrollbar, A11y]}
+        // spaceBetween={40}
+        // slidesPerView={1}
+        // navigation
+        // pagination={{ clickable: true }}
+        // scrollbar={{ draggable: true }}
+        >
+          {
+            data.map(({step, title, text}, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <div className='appli_step'>
+                   {step}
+                  </div>
+                  <h2>{title}</h2>
+                  <p className='appli_text'>{text}</p>
+                </SwiperSlide>
+              )
+            })
+          }
+        </Swiper>
     </section>
   )
 }
