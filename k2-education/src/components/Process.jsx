@@ -14,6 +14,12 @@ const Process = () => {
         <button onClick={() => setPopup(true)} className='process_content'>
          <h3>Step 1</h3>   
         </button>
+        <button onClick={() => setPopup(true)} className='process_content'>
+         <h3>Step 2</h3>   
+        </button>
+        <button onClick={() => setPopup(true)} className='process_content'>
+         <h3>Step 3</h3>   
+        </button>
          <Popups trigger={popup} setTrigger={setPopup}/>
        </div>
     </section>
