@@ -4,6 +4,7 @@ section > h1 {
 
 #process {
     background-color: rgb(0, 150, 255);
+    height: 70vh;
 }
 
 .process_container {
