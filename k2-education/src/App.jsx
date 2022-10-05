@@ -4,6 +4,7 @@ import BodyImage from './components/BodyImage';
 import Nav from './components/Nav';
 import Process from './components/Process';
 import Footer from './components/footer/Footer';
+import Contact from './components/contact/Contact';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
      <BodyImage />
      {/* <AppliPro /> */}
      <Process />
+     <Contact />
      <Footer />
     </>
   )
